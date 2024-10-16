@@ -6,6 +6,7 @@ import AddCompanyButton from '../../components/add-company-button';
 import CompanyTable from '../../components/company-table';
 import CompanyRow from '../../components/company-row';
 import { Status } from '../../components/status-label';
+import MagicButton from '@/app/components/magic-button';
 
 export interface PageProps {}
 
@@ -16,6 +17,7 @@ export default function Page({}: PageProps) {
       <Toolbar action={<AddCompanyButton />}>
         <SearchInput />
       </Toolbar>
+      <MagicButton />
       <CompanyTable>
         <CompanyRow
           id={1}
